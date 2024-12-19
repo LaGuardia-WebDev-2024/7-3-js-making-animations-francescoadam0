@@ -5,17 +5,15 @@ void setup() {
 }
 
 //🎯Variable Declarations Go Here
-var sunSize = 30; 
+var sunSize = 10; 
+var ladybug = 10;
 
 
-//🟢Draw Procedure - Runs on Repeat
-void draw(){
+ 
 
-  //💡⬇️⬇️⬇️💡 Your Code For This Unit Goes Here
-  
-  noStroke();
-
-  // the beautiful blue sky
+draw = function() {
+    // all line sof code here will run rapidly
+ // the beautiful blue sky
   background(82, 222, 240);
 
    // The sun, a little circle on the horizon
@@ -28,9 +26,13 @@ void draw(){
   
   //ladybug
   fill(200,0,0)
-  ellipse(10, 350, 10, 10)
+  ellipse(ladybug, 350, 10, 10)
+  
+  sunSize = sunSize+1
+  ladybug = ladybug+1
+};
 
-}
+
 
 
 
